@@ -1,0 +1,41 @@
+{
+  "name": "registro.legal",
+  "version": "1.0.0",
+  "description": "Blockchain Registration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "...",
+  "license": "MIT",
+  "dependencies": {
+    "@mui/icons-material": "^5.8.4",
+    "@react-pdf/renderer": "^2.3.0",
+    "@stripe/react-stripe-js": "^1.9.0",
+    "@stripe/stripe-js": "^1.32.0",
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "client": "file:client",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.1",
+    "forever": "^4.0.3",
+    "gravatar": "^1.8.1",
+    "i18next": "^21.8.14",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
+    "normalize-url": "^5.3.0",
+    "react-i18next": "^11.18.1",
+    "redux-devtools-extension": "^2.13.9",
+    "stripe": "^9.12.0"
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.2.2",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
