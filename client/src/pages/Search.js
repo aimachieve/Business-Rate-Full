@@ -55,9 +55,9 @@ const Search = ({ searchResult, search: { results } }) => {
               </motion.div>
               <Container sx={{ mt: 5 }}>
                 <motion.div variants={varFadeInUp}>
-                  <Typography sx={{ fontFamily: 'PoppinsBold', fontSize: 35, color: '#0b4064', textAlign: 'center' }}>
+                  {/* <Typography sx={{ fontFamily: 'PoppinsBold', fontSize: 35, color: '#0b4064', textAlign: 'center' }}>
                     Top Rated Local® Los Angeles Acupuncturists
-                  </Typography>
+                  </Typography> */}
                   <Typography sx={{ fontFamily: 'Poppins', fontSize: 20, color: '#0b4064', textAlign: 'center' }}>
                     Last updated May 2022
                   </Typography>
