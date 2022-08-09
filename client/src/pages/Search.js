@@ -64,7 +64,7 @@ const Search = ({ searchResult, search: { results } }) => {
                 </motion.div>
                 <motion.div variants={varFadeInUp}>
                   <Typography sx={{ mb: 3, color: "#173858", }}>
-                    Showing 1-{results.filter((result) => result.rating > 0).length > 10 ? 10 : results.filter((result) => result.rating > 0).length} of {results.filter((result) => result.rating > 0).length} Items.
+                    Showing 1-{results.filter((result) => result.rating > 0).length > 20 ? 20 : results.filter((result) => result.rating > 0).length} of {results.filter((result) => result.rating > 0).length} Items.
                   </Typography>
                   {
                     results.length > 0 ? results.filter((result) => result.rating > 0).sort((a, b) => b.rating > a.rating ? 1 : -1).slice(0, 20).map((result, index) => (

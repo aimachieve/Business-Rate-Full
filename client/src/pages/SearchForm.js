@@ -84,7 +84,8 @@ const SearchForm = ({ searchResult, search: { results } }) => {
     console.log("findBusiness==>", location, type)
 
     if (location !== '' && type !== '') {
-      await searchResult(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=50000&types=${type}&key=AIzaSyCjjz655L5SuMd-IT0q0Pe2nXRlsW4-_qw`)
+      // await searchResult(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${location}&radius=50000&types=${type}&key=AIzaSyCjjz655L5SuMd-IT0q0Pe2nXRlsW4-_qw`)
+      await searchResult(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&types=${type}&key=AIzaSyCjjz655L5SuMd-IT0q0Pe2nXRlsW4-_qw`)
 
       navigate('/search')
     } else {
